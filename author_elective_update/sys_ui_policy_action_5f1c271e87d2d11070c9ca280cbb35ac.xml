@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>approval</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 05:13:38</sys_created_on>
+        <sys_id>5f1c271e87d2d11070c9ca280cbb35ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approval</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5f1c271e87d2d11070c9ca280cbb35ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 05:13:38</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <ui_policy display_value="Create new UI Policy.">41cd0b5e8752d11070c9ca280cbb356d</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>6529e47bdb34b38052dd2f17d49619d0</instance_id>
+        <instance_name>dev82328</instance_name>
+        <name>sys_ui_policy_action_5f1c271e87d2d11070c9ca280cbb35ac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>approval</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-05 05:13:38</sys_created_on><sys_id>5f1c271e87d2d11070c9ca280cbb35ac</sys_id><sys_mod_count>0</sys_mod_count><sys_name>approval</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_ui_policy_action_5f1c271e87d2d11070c9ca280cbb35ac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-05 05:13:38</sys_updated_on><table>x_58872_needit_needit</table><ui_policy display_value="Create new UI Policy.">41cd0b5e8752d11070c9ca280cbb356d</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-411552963</payload_hash>
+        <record_name>approval</record_name>
+        <reverted_from/>
+        <source>a644294e87d6511070c9ca280cbb35ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 05:13:38</sys_created_on>
+        <sys_id>262c671e87d2d11070c9ca280cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183a6904d1f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 05:13:38</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>6e2c671ecdd2d110a02f17db4f97413a</update_guid>
+        <update_guid_history>6e2c671ecdd2d110a02f17db4f97413a:-411552963</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 06:30:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>6d2b1685db6042a6bbd76cdacab81bc1</sys_id>
+        <sys_metadata>5f1c271e87d2d11070c9ca280cbb35ac</sys_metadata>
+        <sys_name>approval</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_5f1c271e87d2d11070c9ca280cbb35ac</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_5f1c271e87d2d11070c9ca280cbb35ac">262c671e87d2d11070c9ca280cbb353b</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

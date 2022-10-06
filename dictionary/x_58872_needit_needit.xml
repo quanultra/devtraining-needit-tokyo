@@ -4,6 +4,7 @@
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="New Field Name" max_length="80" name="u_field_name_5" type="field_name"/>
         <element label="Integer" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="x_909499_newapp221_today_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="hr" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
