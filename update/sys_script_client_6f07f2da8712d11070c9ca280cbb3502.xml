@@ -11,12 +11,22 @@
         <name>NeedIt onChange Example</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading) {
+		alert("is loading = " + isLoading + "_ is template = " + isTemplate);
+	}
+	
+	
+	
    if (isLoading || newValue === '') {
       return;
    }
 
    //Type appropriate comment here, and begin script below
    alert("Priority changed from " + oldValue + " to " + newValue + ".");
+	
+	if (isTemplate) {
+		alert("is Template = ");
+	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
