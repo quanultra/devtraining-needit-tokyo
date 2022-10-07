@@ -2,12 +2,12 @@
     <sys_app_application action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
-        <description/>
+        <description>t_description</description>
         <device_type>browser</device_type>
-        <hint/>
+        <hint>t_hint</hint>
         <name>NeedIt</name>
         <order>100</order>
-        <roles>x_58872_needit.needit_user</roles>
+        <roles>x_58872_needit.needit_user,admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-04 01:21:29</sys_created_on>
