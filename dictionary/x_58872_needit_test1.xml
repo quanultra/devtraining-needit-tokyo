@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="88aab9bb8712111070c9ca280cbb35c8" label="test1" max_length="40" name="x_58872_needit_test1" type="collection">
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
-        <index name="index">
-            <element name="sys_class_name"/>
-        </index>
-    </element>
-</database>
