@@ -16,7 +16,7 @@
    }
 
    //Type appropriate comment here, and begin script below
-   alert("description onchanged" + newValue);
+   //alert("description onchanged" + newValue);
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
