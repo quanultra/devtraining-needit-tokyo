@@ -5,7 +5,7 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>NeedIt When needed field date</name>
+        <name>NeedIt Debugging Practice</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,39 +27,25 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous) {
-    var rightnow = new GlideDateTime();
-	var whenNeeded = new GlideDateTime(current.u_when_needed);
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
 	
-	if (whenNeeded.before(rightnow)) {
-		gs.addErrorMessage("When needed date cannnot be in the past.");
-		current.setAbortAction(true);
-	}
-	
-	// do not allow same-day requests.
-	var today = rightnow.getLocalDate();
-	var isToday = whenNeeded.getLocalDate();
-	// compare today and isToday to see if they are the same day.
-	if (today.compareTo(isToday) == 0) {
-		gs.addErrorMessage("You cannot submit NeedIt requests for today.");
-		current.setAbortAction(true);
-	}
 })(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-10-06 07:10:46</sys_created_on>
+        <sys_created_on>2022-10-11 07:55:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a94fc93e87d6151070c9ca280cbb3552</sys_id>
-        <sys_name>NeedIt When needed field date</sys_name>
+        <sys_id>8b8a4fd88762911070c9ca280cbb3514</sys_id>
+        <sys_name>NeedIt Debugging Practice</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_script_a94fc93e87d6151070c9ca280cbb3552</sys_update_name>
+        <sys_update_name>sys_script_8b8a4fd88762911070c9ca280cbb3514</sys_update_name>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=a94fc93e87d6151070c9ca280cbb3552"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8b8a4fd88762911070c9ca280cbb3514"/>
 </record_update>
