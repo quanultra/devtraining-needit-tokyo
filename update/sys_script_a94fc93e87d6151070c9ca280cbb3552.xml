@@ -28,22 +28,23 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous) {
-    var rightnow = new GlideDateTime();
-	var whenNeeded = new GlideDateTime(current.u_when_needed);
+	// Instantiate the NeedItUtils class.
+	// call the isDatePast function and pass the u_when_needed value.
+	var needItUtils = new NeedItUtils();
+	var isPast = needItUtils.isDatePast(current.u_when_needed);
 	
-	if (whenNeeded.before(rightnow)) {
-		gs.addErrorMessage("When needed date cannnot be in the past.");
+	//var isToday = needItUtils.isDateToday(current.u_when_needed);
+	
+	// if the isDatePast method return true, the date is in the past.
+	if (isPast) {
+		gs.addErrorMessage("When needed date cannot be in the past. Your request has not been saved to the database.");
 		current.setAbortAction(true);
 	}
-	
-	// do not allow same-day requests.
-	var today = rightnow.getLocalDate();
-	var isToday = whenNeeded.getLocalDate();
-	// compare today and isToday to see if they are the same day.
-	if (today.compareTo(isToday) == 0) {
-		gs.addErrorMessage("You cannot submit NeedIt requests for today.");
-		current.setAbortAction(true);
-	}
+
+	//if (isToday) {
+		//gs.addErrorMessage("You cannot submit NeedIt requests for today.");
+		//current.setAbortAction(true);
+	//}
 })(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
