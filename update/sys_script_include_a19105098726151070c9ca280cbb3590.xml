@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.ServerScriptIncludeTest</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ServerScriptIncludeTest</name>
+        <script><![CDATA[var ServerScriptIncludeTest = Class.create();
+
+ServerScriptIncludeTest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getManagerName: function() {
+		var sysid = this.getParameter("sysparam_assignedTo");
+		var employeeName = new GlideRecord('sys_user');
+		employeeName.addQuery('sys_id', sysid);
+		employeeName.query();
+		var managerName = '';
+		
+		if (employeeName.next()) {
+			managerName = employeeName.manager;
+		}
+		return managerName.getDisplayValue();
+	},
+    type: 'ServerScriptIncludeTest'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-13 05:56:39</sys_created_on>
+        <sys_id>a19105098726151070c9ca280cbb3590</sys_id>
+        <sys_name>ServerScriptIncludeTest</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_a19105098726151070c9ca280cbb3590</sys_update_name>
+    </sys_script_include>
+</record_update>
